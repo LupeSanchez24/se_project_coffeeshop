@@ -20,13 +20,14 @@
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .about__title {
   max-width: 251px;
   z-index: 1;
   position: relative;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
@@ -36,7 +37,7 @@
 
 .about__content {
   max-width: 660px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -45,6 +46,15 @@
 
 .about__paragraph {
   margin: 0 0 20px;
+  font-family: "Noto Serif", Georgia, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.about__paragraph:last-child {
+  margin: 0;
 }
 
 .about__circle {
@@ -55,10 +65,10 @@
   position: absolute;
   top: -152px;
   left: -129px;
+  z-index: -1;
 }
 
-.about__circle_animation_blurred,
-.about__circle {
+.about__circle_animation_blurred {
   animation: pulsate 1.3s ease-in-out infinite;
   animation-delay: 0s;
 }
